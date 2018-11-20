@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name='full-screen' content='yes'>
+    <meta name='viewport' content='width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0'>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>云蚂蚁月饼/手工无添加/品味经典</title>
+    <meta name="description" content="情浓故乡月·意蕴思乡饼"/>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin:0;
+        }
+        body{
+            overflow: hidden;
+        }
+        .bcg{
+            /*background: url(1.jpg) no-repeat;*/
+            background-size:100%;
+            /*background : #C92C18;*/
+        }
+        .animated{
+            position: absolute;
+            -webkit-animation-fill-mode : both;
+            -moz-animation-fill-mode    : both;
+            -o-animation-fill-mode      : both;
+            animation-fill-mode         : both;
+            -webkit-animation-duration : .5s;
+            -moz-animation-duration    : .5s;
+            -o-animation-duration      : .5s;
+            animation-duration         : .5s;
+        }
+        img {
+            width:100%;
+            vertical-align: bottom;
+        }
+        @-webkit-keyframes fadeInUp{
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(100%);
+            }
+            100%{
+                opacity: 1;
+                -webkit-transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp{
+            0% {
+                opacity: 0;
+                -webkit-transform : translateY(100%);
+                -moz-transform    : translateY(100%);
+                -ms-transform     : translateY(100%);
+                -o-transform      : translateY(100%);
+                transform         : translateY(100%);
+            }
+            100%{
+                opacity: 1;
+                -webkit-transform : translateY(0);
+                -moz-transform    : translateY(0);
+                -ms-transform     : translateY(0);
+                -o-transform      : translateY(0);
+                transform         : translateY(0);
+            }
+        }
+        .fadeInUp{
+            -webkit-animation-name: fadeInUp;
+            -o-animation-name      : fadeInUp;
+            animation-name: fadeInUp;
+        }
+        @-webkit-keyframes fadeInDown{
+            0% {
+                opacity :0;
+                -webikit-transform:translateY(100%);
+            }
+            100% {
+                opacity :1;
+                -webkit-transform: translateY(0);
+            }
+        }
+        @keyframes fadeInDown{
+            0% {
+                opacity :0;
+                -webkit-transform : translateY(-100%);
+                -moz-transform    : translateY(-100%);
+                -ms-transform     : translateY(-100%);
+                -o-transform      : translateY(-100%);
+                transform         : translateY(-100%);
+            }
+            100% {
+                opacity :1;
+                -webkit-transform : translateY(0);
+                -moz-transform    : translateY(0);
+                -ms-transform     : translateY(0);
+                -o-transform      : translateY(0);
+                transform         : translateY(0);
+            }
+        }
+        .fadeInDown {
+            -webkit-animation-name : fadeInDown;
+            -o-animation-name      : fadeInDown;
+            animation-name         : fadeInDown;
+        }
+        span {
+            position : absolute;
+            border :10px solid rgba(0,255,255,.5);
+            z-index: 999;
+            width: 15px;
+            height :15px;
+            left: 50%;
+            margin-left :-10px;
+            border-top :none;
+            border-left :none;
+            /*border-bottom-right-radius: 70%;*/
+
+        }
+        .down{
+            bottom :20px;
+            -webkit-transform : rotate(45deg);
+            -moz-transform    : rotate(45deg);
+            -ms-transform     : rotate(45deg);
+            -o-transform      : rotate(45deg);
+            transform         : rotate(45deg);
+        }
+        .up{
+            display: none;
+            top :20px;
+            -webkit-transform : rotate(-135deg);
+            -moz-transform    : rotate(-135deg);
+            -ms-transform     : rotate(-135deg);
+            -o-transform      : rotate(-135deg);
+            transform         : rotate(-135deg);
+        }
+        .bgm{
+            overflow: hidden;
+            width: 47px;
+            position: absolute;
+            border-radius: 100%;
+            z-index: 1;
+            height: 47px;
+            top: 10px;
+            right: 20px;
+        }
+        .dang{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            z-index: 999999;
+            top: 25px;
+            right: 25px;
+            -webkit-animation : xuanzhuan 4s infinite linear;
+            -o-animation      : xuanzhuan 4s infinite linear;
+            animation         : xuanzhuan 4s infinite linear;
+        }
+
+        @keyframes xuanzhuan {
+            0%{
+                -webkit-transform : rotate(0deg);
+                -moz-transform    : rotate(0deg);
+                -ms-transform     : rotate(0deg);
+                -o-transform      : rotate(0deg);
+                transform         : rotate(0deg);
+            }
+            50%{
+                -webkit-transform : rotate(180deg);
+                -moz-transform    : rotate(180deg);
+                -ms-transform     : rotate(180deg);
+                -o-transform      : rotate(180deg);
+                transform         : rotate(180deg);
+            }
+            100%{
+                -webkit-transform : rotate(360deg);
+                -moz-transform    : rotate(360deg);
+                -ms-transform     : rotate(360deg);
+                -o-transform      : rotate(360deg);
+                transform         : rotate(360deg);
+            }
+        }
+        
+
+
+
+
+    </style>
+</head>
+<body class="bcg">
+    <div class="aaaa">
+
+    </div>
+    <div class="dang"></div>
+    <!--<div class="bgm">-->
+        <!--<audio id="audio" autoplay="autoplay" controls="controls"loop="loop" preload="auto">-->
+            <!--你的浏览器不支持audio标签-->
+            <!--<source src="bgm.mp3" type="audio/mpeg">-->
+        <!--</audio>-->
+    <!--</div>-->
+    <span class="down"></span>
+    <span class="up"></span>
+    <ul id="music_btn">
+        <li class="animated">
+            <img src="1.jpg" >
+        </li>
+        <li class="animated">
+            <img src="2.jpg" >
+        </li>
+        <li class="animated">
+            <img src="3.jpg" >
+        </li>
+        <li class="animated">
+            <img src="4.jpg" >
+        </li>
+        <li class="animated buy1">
+            <a href="http://dd.v2.yunmayi.com/mall/index.html?t=1502086373#/mall/detail/20001288/">
+                <img src="5.jpg" >
+            </a>
+        </li>
+        <li class="animated buy2">
+            <a href="http://dd.v2.yunmayi.com/mall/index.html?t=1502086373#/mall/detail/20001287/">
+                <img src="6.jpg" >
+            </a>
+        </li>
+        <li class="animated">
+            <img src="7.jpg" >
+        </li>
+        <!--<li class="animated">-->
+            <!--<img src="1.jpg" >-->
+        <!--</li>-->
+    </ul>
+
+    <!--<script src="http://www.zeptojs.cn/zepto.min.js"></script>-->
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./jquery.md5.js" ></script>
+    <script type="text/javascript">
+    //上滑
+
+    $(function () {
+        var App_ID = 1000001;
+        var APP_SECRET = "sUTARdb9fjM2W10PF54xQiLHwpvEJXOk";
+        var API_URL = "http://api.h5.yunmayi.com/index.php/";
+        // function createSign (params1) {
+        //     let params = params1 || {};
+        //     let timestamp = new Date().getTime() / 1000;
+        //     let str = "";
+        //     let key = "";
+        //     params["app_id"] = App_ID;
+        //     params["timestamp"] = parseInt(timestamp);
+        //     let keyDist = Object.keys(params).sort();
+        //     for( let k in keyDist) {
+        //         key = keyDist[k];
+        //         if (params[key] !== "") {
+        //             str += key + "=" + params[key] + '&';
+        //         }
+        //     }
+        //     str += "app_secret=" + APP_SECRET;
+        //     params['sign'] = $.md5(str).toString().toUpperCase();
+        //     // params= encodeURI($.param(params));
+        //     return params;
+        // }
+
+        function httpJson (url, params, callback) {
+            // callback = typeof callback == "function" ? callback : function () {};
+            // let api = url.replace(/\./g,"/");
+            // console.log( API_URL + api + '?' + createSign(params))
+            $.ajax({
+                // url: API_URL + api ,
+                url: "http://dd.v2.yunmayi.com"+ url ,
+                type: "post",
+                data: params,
+                dataType: "jsonp",
+                // jsonp: 'callback',
+                success: function (data) {
+                    console.log(res)
+
+                    // callback(data);
+                },
+                error: function (error) {
+                    // console.log(error)
+                }
+            })
+            $.ajax({
+                // url: API_URL + api ,
+                url: "http://dd.v2.yunmayi.com"+ url ,
+                type: "get",
+                data: params,
+                dataType: "jsonp",
+                // jsonp: 'callback',
+                success: function (data) {
+                    console.log(res)
+
+                    // callback(data);
+                },
+                error: function (error) {
+                    // console.log(error)
+                }
+            })
+        }
+//
+        httpJson('/passport/getSmsVerifyCode',{
+            mobile: "18626888180",
+        }, function (res) {
+            console.log(res)
+        });
+
+        $.post('/passport/getSmsVerifyCode',{
+            mobile: "18626888180",
+
+        }, function (res) {
+            console.log(res)
+        })
+        $.get('/passport/getSmsVerifyCode',{
+            mobile: "18626888180",
+
+        }, function (res) {
+            console.log(res)
+        })
+//         var audio = document.getElementById('audio');
+//         //屏幕高度自适应
+//         $('img').height($(window).height());
+//         var length = $('li').length;//队列长度
+//         var Gindex = 0;//上一个对象下标
+//         var timerUp = setInterval(function () {
+//             $(".up").toggle(1000);
+//         },1000) ;
+//         var timerDown = setInterval(function () {
+//             $(".down").toggle(1000);
+//         },1000) ;
+//         //初始化
+//         function init (){
+//             $("li").css({"z-index":1});
+//             $("li").eq(Gindex).css({"z-index":3});
+//             $(".up").css("z-index","0");
+//             audio.play();//开启音乐
+//             if (audio.paused){
+//                 $(".dang").css({'background':'url(music.png) no-repeat ','background-size':'cover'});
+//             }
+//             else{
+//                 $(".dang").css({'background':'url(pencil.png) no-repeat ','background-size':'cover'});
+//             }
+//         }
+//         init();
+//         //触屏事件
+//         var startMove = 0,nowMove = 0,sport =false;
+//         $('html').on('touchstart',function (event) {
+//             sport = false;
+//             if(event.targetTouches.length ==1){
+// //                event.stopPropagation();
+//                 startMove = event.targetTouches[0].pageY;
+//             }
+//         });
+//         $('html').on('touchmove',function (event) {
+//             if(event.targetTouches.length ==1){
+//                 event.preventDefault();
+//                 nowMove = event.targetTouches[0].pageY;
+//                 if(startMove - nowMove >=100 && sport == false){
+//                     changes();
+//                 }
+//                 else if(startMove - nowMove <= -100 && sport == false){
+//                     changesUp();
+//                 }
+//             }
+//         });
+//         var down = false,up = false,first = false;
+//         //移除前一个所有样式
+//         function removeLog(){
+//             $("li").eq(Gindex).css({"z-index":3}).removeClass('fadeInUp').removeClass('fadeInDown');
+//             if(down){
+//                 $("li").eq(Gindex+1).css({"z-index":2});
+//                 down = false;
+//
+//             }else if (up){
+//                 if(Gindex-1>=0){
+//                     $("li").eq(Gindex-1).css({"z-index":2})
+//                 }
+//                 else if(Gindex == 0  && first){
+//                     $("li").eq(length-1).css({"z-index":2})
+//                 }
+//                 up = false;
+//             }
+//         }
+//         //下滑事件
+//         function changesUp() {
+//             if(Gindex == 0 ){
+//                 return false
+//             }
+//             else if(Gindex ==1){
+//                 clearInterval(timerUp);
+//                 $(".up").css("z-index","0");
+//             }
+//             down =true;
+//             removeLog();
+//             Gindex--;
+//             $("li").eq(Gindex).css({"z-index":99});
+//             $('li').eq(Gindex).addClass('fadeInDown');
+//             sport = true;
+//         }
+//         //上滑事件
+//         function changes(e) {
+//             $(".up").css("z-index","999");
+//             timerUp = setInterval(function () {
+//                 $(".up").toggle(1000);
+//             },1000) ;
+//             up =true;
+//             removeLog();
+//             if(Gindex == -1){
+//                 clearInterval(timerUp);
+//                 $(".up").css("z-index","0");
+//             }
+//             if(Gindex >= length-1){
+//                 first = true;
+//                 Gindex = -1;
+//                 $("li").css({"z-index":1}).removeClass('fadeInUp').removeClass('fadeInDown');
+//                 $("li").eq(Gindex).css({"z-index":99});
+//                 $('li').eq(Gindex).addClass('fadeInUp');
+//
+//             }else{
+//                 Gindex++;
+//                 $("li").eq(Gindex).css({"z-index":99});
+//                 $('li').eq(Gindex).addClass('fadeInUp');
+//                 sport = true;
+//             }
+//         }
+//         //跳转购买页
+//         $('.buy1').click(function () {
+//             location.href = "http://dd.v2.yunmayi.com/mall/index.html?t=1502086373#/mall/detail/20001288/"
+//         });
+//         $('.buy2').click(function () {
+//             location.href = "http://dd.v2.yunmayi.com/mall/index.html?t=1502086373#/mall/detail/20001287/"
+//         });
+//         //音乐点击事件
+//         $('.dang').click(function () {
+//             event.stopPropagation();
+//             if (!audio.paused){
+//                 $(".dang").css({'background':'url(  music.png) no-repeat ','background-size':'cover'});
+//                 audio.pause();
+//             }
+//             else{
+//                 $(".dang").css({'background':'url(pencil.png) no-repeat ','background-size':'cover'});
+//                 audio.play();
+//                 return
+//
+//             }
+//         });
+    });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
